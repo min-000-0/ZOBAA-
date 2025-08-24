@@ -1,5 +1,5 @@
 // Variables
-@import "variables";
+@import "/assets/scss/variables";
 
 // Bootstrap
 @import "bootstrap/scss/variables";
@@ -10,9 +10,9 @@
 @import "bootstrap/scss/utilities";
 
 // Base
-@import "base/typography";
-@import "base/utilities";
-@import "base/extended";
+@import "/assets/scss/base/typography";
+@import "/assets/scss/base/utilities";
+@import "/assets/scss/base/extended";
 
 @import "bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons";
@@ -20,11 +20,11 @@
 // component
 
 // Layout
-@import "layout/base";
-@import "layout/header";
-@import "layout/footer";
+@import "/assets/scss/layout/base";
+@import "/assets/scss/header";
+@import "/assets/scss/footer";
 
 // Pages
-@import "pages/home";
-@import "pages/login";
-@import "pages/profile";
+@import "/assets/scss/pages/home";
+@import "/assets/scss/pages/login";
+@import "/assets/scss/pages/profile";

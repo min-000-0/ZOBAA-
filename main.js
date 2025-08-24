@@ -1,5 +1,4 @@
-import 'swiper/css';
-import 'swiper/css/pagination';
+
 
 import 'bootstrap/dist/js/bootstrap.min.js';
 

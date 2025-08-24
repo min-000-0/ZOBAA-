@@ -1,0 +1,119 @@
+
+// -------------------------------
+//  width / height 設定 (以5為倍數，還有auto / full / unset)
+// -------------------------------
+// 定義寬度與高度的百分比
+$percents: 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100;
+
+// 初始化寬度與高度的映射
+$width-map: (auto: auto, unset: unset, full: 100%);
+$height-map: (auto: auto, unset: unset, full: 100%);
+
+// 生成寬度與高度的工具類別
+@each $val in $percents {
+  $width-map: map-merge($width-map, ($val: $val * 1%));
+  $height-map: map-merge($height-map, ($val: $val * 1%));
+}
+
+// -------------------------------
+//  gap 設定 (最大 80px)
+// -------------------------------
+// 基本間距單位
+$gap-unit: .25rem;
+// gap上限
+$gap-max-levels: 20;
+
+// 生成 gap 工具類 0~10
+$gap-map: ();
+@for $i from 0 through $gap-max-levels {
+  $gap-map: map-merge($gap-map, ($i: $i * $gap-unit));
+}
+
+
+// -------------------------------
+//  border-radious 設定 (最大 80px)
+// -------------------------------
+// 圓角等級上限
+$rounded-levels: 20;
+
+// 生成 0~$rounded-levels 的圓角映射
+$rounded-map: (
+  null: 0,
+  circle: 50%,
+  pill: $border-radius-pill
+);
+
+@for $i from 0 through $rounded-levels {
+  $val: $border-radius * $i;
+  $rounded-map: map-merge($rounded-map, ($i: $val));
+}
+
+
+// -------------------------------
+//  Cursor 設定 
+// -------------------------------
+$cursor-map: (
+  auto: auto,
+  default: default,
+  pointer: pointer,
+  wait: wait,
+  text: text,
+  move: move,
+  help: help,
+  not-allowed: not-allowed,
+  progress: progress,
+  crosshair: crosshair,
+  grab: grab,
+  grabbing: grabbing
+);
+
+
+// -------------------------------
+//  Pointer-events 設定 
+// -------------------------------
+$pointer-events-map: (
+  auto: auto,
+  none: none,
+  stroke: stroke,
+  fill: fill,
+);
+
+// 將自訂的寬度與高度工具類別合併到預設的 $utilities 中
+$utilities: map-merge(
+  $utilities,
+  (
+    "width": (
+      property: width,
+      class: w,
+      values: $width-map,
+      responsive: true
+    ),
+    "height": (
+      property: height,
+      class: h,
+      values: $height-map,
+      responsive: true
+    ),
+    "gap": (
+      property: gap,
+      class: gap,
+      values: $gap-map,
+      responsive: true
+    ),
+    "rounded": (
+      property: border-radius,
+      class: rounded,
+      values: $rounded-map,
+    ),
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      values: $cursor-map,
+    ),
+    "pointer-events": (
+      property: pointer-events,
+      class: "pointer-events",
+      values: $pointer-events-map,
+    )
+  )
+);

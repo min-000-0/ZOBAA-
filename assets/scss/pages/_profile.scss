@@ -1,0 +1,193 @@
+.profile {
+    margin-top: 100px;
+    margin-bottom: -40px;
+    .bannerBox {
+        max-height: 200px;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        position: relative;
+        .editorBox {
+            position: absolute;
+            right: 2rem;
+            bottom: 2rem;
+            cursor: pointer;
+        }
+    }
+    .infoBox {
+        position: relative;
+        top: -80px;
+        .personIfno {
+            position: relative;
+        }
+        .personImgbox {
+            width: 120px;
+            height: 120px;
+            border: 4px solid $primary;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        .editorBox {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: absolute;
+            right: 5px;
+            bottom: 10px;
+        }
+    }
+    @include media-breakpoint-up(sm) {
+        .bannerBox {
+            max-height: 360px;
+        }
+    }
+    @include media-breakpoint-up(md) {
+        margin-top: 160px;
+        margin-bottom: 0;
+        .bannerBox {
+            max-height: 480px;
+        }
+        .infoBox {
+            .personImgbox {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        margin-top: 210px;
+    }
+}
+
+.profileMain {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 3;
+    .profileType {
+        border-radius: 24px;
+        background-color: $white;
+        padding: 1rem 0;
+        box-shadow: 0px 8px 80px 0px #00000014;
+        li {
+            flex: 1;
+            display: flex;
+            padding: .75rem 1.5rem;
+            border-right: 1px solid #ECECEC;
+            cursor: pointer;
+            p {
+                font-weight: 700;
+                color: $black;
+            }
+            &.active {
+                p::after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: #CBB6AF;
+                    position: relative;
+                    top: .5rem;
+                }
+            }
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+    .profileDetail {
+        border-radius: 1.5rem;
+        background-color: $white;
+        box-shadow: 0px 8px 80px 0px #00000014;
+    }
+    .profileMainDetail {
+        .nav-underline {
+            border-bottom: 1px solid #ECECEC;
+            gap: 2rem;
+            .nav-link {
+                padding: 1rem 0;
+                border-bottom: none;
+            }
+            .nav-link.active {
+                color: $primary;
+                border-bottom: none;
+                position: relative;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 32px;
+                    height: 4px;
+                    background-color: $primary;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+
+    .infoList {
+        border-radius: 20px;
+        border: 1px solid #ECECEC;
+        transition: all .3s;
+        .btnGroup {
+            width: 100%;
+        }
+        .btn {
+            flex: 1;
+            transition: all .3s;
+        }
+        .imgBox {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid $primary;
+            overflow: hidden;
+            position: relative;
+            img {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &:hover {
+            background-color: #F3EEEC;
+            .btn {
+                background-color: $white;
+                opacity: 1;
+                pointer-events: painted;
+                &:hover {
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(md) {
+        margin-bottom: 120px;
+        .infoList {
+            .btnGroup {
+                width: unset;
+            }
+            .btn {
+                opacity: 0;
+                pointer-events: none;
+                flex: none;
+            }
+        }
+    }
+}

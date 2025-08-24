@@ -1,0 +1,98 @@
+.login {
+    min-height: 100vh;
+    width: 100%;
+    background-color: $white;
+    .swiperBox {
+        flex: 1;
+        flex-shrink: 0;
+        max-width: 680px;
+        .swiperMain {
+            border-radius: 40px;
+            overflow: hidden;
+            position: relative;
+            .imgBox {
+                aspect-ratio: 6/10;
+                position: relative;
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #00000066;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                }
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            .mainBox {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 9;
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+                .textBox {
+                    .title {
+                        color: #A37F71;
+                        font-size: 60px;
+                        font-weight: 700;
+                        line-height: 120%;
+                    }
+                    .text {
+                        font-size: 48px;
+                        font-weight: 700;
+                        line-height: 120%;
+                        color: #F3EEEC99;
+                    }
+                }
+            }
+        }
+    }
+    .loginInfo {
+        flex: 2;
+        .loginInfoMain {
+            max-width: 600px;
+            width: 90%;
+            .loginBox {
+                position: relative;
+                button {
+                    width: 100%;
+                    padding: 15px 1rem;
+                    color: #4B4B4B;
+                }
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 1rem;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    .signBox {
+        a {
+            text-decoration: underline;
+        }
+    }
+    .swiper-pagination-bullet {
+        background-color: #fff;
+        transition: all .3s;
+        opacity: 1;
+        &.swiper-pagination-bullet-active {
+            width: 24px;
+            border-radius: 12px;
+            background-color: #CBB6AF;
+        }
+    }
+}

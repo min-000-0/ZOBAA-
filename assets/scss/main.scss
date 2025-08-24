@@ -1,0 +1,30 @@
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "bootstrap/scss/variables";
+
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/utilities";
+
+// Base
+@import "base/typography";
+@import "base/utilities";
+@import "base/extended";
+
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons";
+
+// component
+
+// Layout
+@import "layout/base";
+@import "layout/header";
+@import "layout/footer";
+
+// Pages
+@import "pages/home";
+@import "pages/login";
+@import "pages/profile";

@@ -1,0 +1,113 @@
+@import "bootstrap/scss/functions";
+
+$bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
+
+$font-family-sans-serif:      "Noto Sans TC", Apple LiGothic, "微軟正黑體", Arial, sans-serif;
+$font-family-base:            $font-family-sans-serif; // !default;
+
+$primary: #4A3830;
+$success: #7CD31F;
+$info: #2AAFFC;
+$danger: #FF3A55;
+$secondary: #ECECEC;
+
+$font-weight-bold: 600;
+
+$border-radius: .25rem;
+
+$btn-border-radius: .75rem;
+
+$input-btn-padding-y: 15px;
+$input-btn-padding-x: .75rem;
+$input-color: #4B4B4B;
+$input-border-radius: .75rem;
+
+$input-padding-y-sm: 9px;
+$input-padding-x-sm: 1rem;
+$input-font-size-sm: 1rem;
+
+$nav-link-color: #4B4B4B;
+
+
+// -------------------------------
+//  font size 設定 (最大 80px)
+// -------------------------------
+
+$font-size-base: 1rem; // 1rem / 16px !default;
+$ratio: .25rem;        // 每級增加 1/4 rem
+$font-size-max: 20;    // 最大值 20 * 1/4rem
+
+// 生成 font-sizes map
+$font-sizes: ();
+@for $i from 1 through $font-size-max {
+  $size: $font-size-base * ($i * ($ratio / 1rem));
+  $font-sizes: map-merge($font-sizes, ($i: $size));
+}
+
+// 設定 h1 ~ h6 的 font-size
+// $h1-font-size: ;
+$h2-font-size: map-get($font-sizes, 10); // 等於 (4 * 10) = 40px
+$h3-font-size: map-get($font-sizes, 8);  // 等於 (4 * 8)  = 32px
+$h4-font-size: map-get($font-sizes, 7);
+$h5-font-size: map-get($font-sizes, 6);
+$h6-font-size: map-get($font-sizes, 5);  // 等於 (4 * 4)  = 16px
+
+
+// -------------------------------
+//  margin / padding 設定 (最大 240px)
+// -------------------------------
+
+$spacer-base: 1rem;     // 基準單位
+$spacer-ratio: 0.25rem; // 每級增加 1/4rem
+$spacer-steps: 60;      // 最大值 60 * 1/4rem
+
+// 生成 $spacers map
+$spacers: ();
+@for $i from 0 through $spacer-steps {
+  $size: $i * $spacer-ratio;
+  $spacers: map-merge($spacers, ($i: $size));
+}
+
+// -------------------------------
+//  border-width 設定 (最大 20px)
+// -------------------------------
+
+$border-width-base: 1px;   // 基準寬度
+$border-width-ratio: 1px;  // 每級增加 1px
+$border-width-max: 20;      // 最大值 20
+
+// 生成 border-widths map
+$border-widths: ();
+@for $i from 1 through $border-width-max {
+  $size: $border-width-base + ($i - 1) * $border-width-ratio;
+  $border-widths: map-merge($border-widths, ($i: $size));
+}
+
+
+// -------------------------------
+//  Layout 設定 (以下都是原設定)
+// -------------------------------
+// 分12欄
+$grid-columns: 12; 
+
+// 每欄間距
+$grid-gutter-width: 1.5rem;
+
+// RWD斷點
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// container 最大寬
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);

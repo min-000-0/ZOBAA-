@@ -1,4 +1,6 @@
-import './assets/scss/all.scss';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-console.log('Hello world');
+import './assets/scss/main.scss';

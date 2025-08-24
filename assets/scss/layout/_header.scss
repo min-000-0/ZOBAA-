@@ -1,4 +1,28 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    border-bottom: .5px solid #D5D5DD;
+    background-color: rgba(255,255,255, .5);
+    backdrop-filter: blur(40px);
+    .searchBox {
+        position: relative;
+        .searchInput {
+            padding-left: 2.5rem;
+            border-radius: .5rem;
+        }
+        .searchIcon {
+            cursor: pointer;
+        }
+        @include media-breakpoint-up(md) {
+            .searchIcon {
+                position: absolute;
+                top: 50%;
+                left: .75rem;
+                transform: translateY(-50%);
+            }
+        } 
+    }
 }

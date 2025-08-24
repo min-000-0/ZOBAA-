@@ -1,0 +1,51 @@
+
+html, body {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4F4F4;
+  color: #4B4B4B;
+}
+main {
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block; /* 取消底部空隙，排版更精準 */
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  margin-bottom: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+  color: $black;
+  font-weight: 700;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}

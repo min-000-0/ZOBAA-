@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+  rel="stylesheet"
+/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>ZOBAA !</title>
+    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-DMo6ezSb.js"></script>
+    <link rel="stylesheet" crossorigin href="/web-layout-training-vite/assets/main-D5mh3ZPo.css">
+  </head>
+  <body>
+    <header class="header">
+  <nav class="navbar py-md-4 py-3">
+    <div class="container">
+      <div class="d-flex align-items-center w-full">
+        <h1 style="padding-top: 5px; padding-bottom: 5px;">
+          <a href="./" class="d-block">
+            <img src="data:image/png;base64,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" alt="logo">
+          </a>
+        </h1>
+        <div class="d-flex ms-6 w-full justify-content-md-between justify-content-end">
+          <div class="searchBox d-flex align-items-center">
+            <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.6%2021L13.3%2014.7C12.8%2015.1%2012.225%2015.4167%2011.575%2015.65C10.925%2015.8833%2010.2333%2016%209.5%2016C7.68333%2016%206.14583%2015.3708%204.8875%2014.1125C3.62917%2012.8542%203%2011.3167%203%209.5C3%207.68333%203.62917%206.14583%204.8875%204.8875C6.14583%203.62917%207.68333%203%209.5%203C11.3167%203%2012.8542%203.62917%2014.1125%204.8875C15.3708%206.14583%2016%207.68333%2016%209.5C16%2010.2333%2015.8833%2010.925%2015.65%2011.575C15.4167%2012.225%2015.1%2012.8%2014.7%2013.3L21%2019.6L19.6%2021ZM9.5%2014C10.75%2014%2011.8125%2013.5625%2012.6875%2012.6875C13.5625%2011.8125%2014%2010.75%2014%209.5C14%208.25%2013.5625%207.1875%2012.6875%206.3125C11.8125%205.4375%2010.75%205%209.5%205C8.25%205%207.1875%205.4375%206.3125%206.3125C5.4375%207.1875%205%208.25%205%209.5C5%2010.75%205.4375%2011.8125%206.3125%2012.6875C7.1875%2013.5625%208.25%2014%209.5%2014Z'%20fill='%23909090'/%3e%3c/svg%3e" alt="search" class="searchIcon me-4 me-md-0">
+            <input type="text" class="form-control form-control-sm searchInput d-none d-md-block" id="search" placeholder="搜尋景點、地點或城市">
+          </div>
+          <div class="userBox d-flex align-items-center">
+            <a href="#" class="me-4">
+              <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.00179%2022C7.45162%2022%206.98082%2021.8043%206.58937%2021.413C6.19725%2021.021%206.00119%2020.55%206.00119%2020C6.00119%2019.45%206.19725%2018.979%206.58937%2018.587C6.98082%2018.1957%207.45162%2018%208.00179%2018C8.55195%2018%209.02276%2018.1957%209.41421%2018.587C9.80632%2018.979%2010.0024%2019.45%2010.0024%2020C10.0024%2020.55%209.80632%2021.021%209.41421%2021.413C9.02276%2021.8043%208.55195%2022%208.00179%2022ZM18.0048%2022C17.4546%2022%2016.9838%2021.8043%2016.5923%2021.413C16.2002%2021.021%2016.0042%2020.55%2016.0042%2020C16.0042%2019.45%2016.2002%2018.979%2016.5923%2018.587C16.9838%2018.1957%2017.4546%2018%2018.0048%2018C18.5549%2018%2019.0261%2018.1957%2019.4182%2018.587C19.8096%2018.979%2020.0054%2019.45%2020.0054%2020C20.0054%2020.55%2019.8096%2021.021%2019.4182%2021.413C19.0261%2021.8043%2018.5549%2022%2018.0048%2022ZM7.15153%206L9.55225%2011H16.5543L19.3052%206H7.15153ZM6.20125%204H20.9556C21.4058%204%2021.7142%204.16667%2021.8809%204.5C22.0476%204.83333%2022.0393%205.18333%2021.8559%205.55L18.3049%2011.95C18.1215%2012.2833%2017.8797%2012.5417%2017.5796%2012.725C17.2795%2012.9083%2016.9378%2013%2016.5543%2013H9.10211L8.00179%2015H20.0054V17H8.00179C7.25156%2017%206.68473%2016.6707%206.30128%2016.012C5.91783%2015.354%205.90116%2014.7%206.25127%2014.05L7.60167%2011.6L4.0006%204H2V2H5.25097L6.20125%204Z'%20fill='%234B4B4B'/%3e%3c/svg%3e" alt="cart">
+            </a>
+            <a class="btn btn-primary py-4 px-8 d-none d-sm-block" href="./login.html">
+              登入 / 註冊
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    <main>
+      <section class="profile">
+        <div class="container">
+          <div class="d-flex flex-column align-items-center">
+            <div class="bannerBox">
+              <img class="w-full bannerImg" src="/web-layout-training-vite/assets/profile_banner-Bib6PyU0.jpg" alt="banner">
+              <div class="d-md-flex editorBox d-none">
+                <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_187_44278)'%3e%3cpath%20d='M3%2017.2501V21.0001H6.75L17.81%209.94006L14.06%206.19006L3%2017.2501ZM20.71%207.04006C21.1%206.65006%2021.1%206.02006%2020.71%205.63006L18.37%203.29006C17.98%202.90006%2017.35%202.90006%2016.96%203.29006L15.13%205.12006L18.88%208.87006L20.71%207.04006Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_187_44278'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="editor">
+                <p class="text-white ps-2">更換封面</p>
+              </div>
+            </div>
+            <div class="infoBox d-flex flex-column align-items-center">
+              <div class="personIfno mb-2">
+                <div class="personImgbox">
+                  <img src="/web-layout-training-vite/assets/profile-B3ZHBYc7.jpg" alt="profile">
+                </div>
+                <div class="editorBox">
+                  <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_187_44278)'%3e%3cpath%20d='M3%2017.2501V21.0001H6.75L17.81%209.94006L14.06%206.19006L3%2017.2501ZM20.71%207.04006C21.1%206.65006%2021.1%206.02006%2020.71%205.63006L18.37%203.29006C17.98%202.90006%2017.35%202.90006%2016.96%203.29006L15.13%205.12006L18.88%208.87006L20.71%207.04006Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_187_44278'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="editor">
+                </div>
+              </div>
+              <p class="fs-6 fw-bold">
+                Jessica
+              </p>
+              <p>
+                jessica.yen@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="profileMain">
+        <div class="container">
+          <ul class="profileType d-flex mb-6">
+            <li class="active">
+              <p>
+                我的帳號
+              </p>
+            </li>
+            <li>
+              <p>
+                訂單管理
+              </p>
+            </li>
+            <li>
+              <p>
+                我的收藏
+              </p>
+            </li>
+          </ul>
+          <div class="profileDetail p-md-8 p-4">
+            <h2 class="fs-12 fw-bold text-black mb-10 mt-md-10 mt-4 ">
+              我的帳號 
+            </h2>
+            <div class="profileMainDetail">
+              <ul class="nav nav-underline mb-6" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">個人資訊</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">常用旅客</button>
+                </li>
+                <li class="nav-item" role="presentation">
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                  <div class="d-flex flex-column gap-6 mb-10">
+                    <div>
+                      <p class="mb-1">姓名</p>
+                      <p class="fs-md-5 fs-4 fw-bold text-black">Jessica Yen</p>
+                    </div>
+                    <div>
+                      <p class="mb-1">電子信箱</p>
+                      <p class="fs-md-5 fs-4 fw-bold text-black">jessica.yen@gmail.com</p>
+                    </div>
+                    <div>
+                      <p class="mb-1">密碼</p>
+                      <p class="fs-md-5 fs-4 fw-bold text-black">************</p>
+                    </div>
+                    <div>
+                      <p class="mb-1">聯絡電話</p>
+                      <p class="fs-md-5 fs-4 fw-bold text-black">+886 912-345-678</p>
+                    </div>
+                    <div>
+                      <p class="mb-1">地址</p>
+                      <p class="fs-md-5 fs-4 fw-bold text-black">台北市士林區幸福路193號5樓之1</p>
+                    </div>
+                    <div>
+                      <p class="mb-1">生日</p>
+                      <p class="fs-md-5 fs-4 fw-bold text-black">1995-09-20</p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-outline-primary fw-bold w-full w-md-auto px-8">
+                      <svg class="bi" width="24" height="24" fill="currentColor">
+                        <use xlink:href="#editorSvg"/>
+                      </svg>
+                      編輯資訊
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                  <ul class="d-flex flex-column gap-3 mb-10">
+                    <li class="infoList d-flex justify-content-between flex-column flex-md-row align-items-md-center align-items-start p-md-6 p-4 gap-4">
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="imgBox">
+                          <img src="/web-layout-training-vite/assets/profile-B3ZHBYc7.jpg" alt="">
+                        </div>
+                        <div class="infoListDetail d-flex flex-column justify-content-center gap-1">
+                          <p class="fs-5 fw-bold" style="color: #112211;">Jessica Yen</p>
+                          <div class="d-none d-md-block">
+                            <div class="d-flex gap-2">
+                              <img src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%208.66667C2%207.95942%202.28095%207.28115%202.78105%206.78105C3.28115%206.28095%203.95942%206%204.66667%206H11.3333C12.0406%206%2012.7189%206.28095%2013.219%206.78105C13.719%207.28115%2014%207.95942%2014%208.66667V13.3333C14%2013.687%2013.8595%2014.0261%2013.6095%2014.2761C13.3594%2014.5262%2013.0203%2014.6667%2012.6667%2014.6667H3.33333C2.97971%2014.6667%202.64057%2014.5262%202.39052%2014.2761C2.14048%2014.0261%202%2013.687%202%2013.3333V8.66667Z'%20stroke='%234A3830'%20stroke-width='1.33333'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M2%208.66663L3.94267%2010.2206C4.734%2010.854%205.876%2010.7906%206.59267%2010.074C6.77746%209.88911%206.99686%209.74248%207.23834%209.64244C7.47981%209.5424%207.73862%209.49091%208%209.49091C8.26138%209.49091%208.52019%209.5424%208.76166%209.64244C9.00314%209.74248%209.22254%209.88911%209.40733%2010.074C9.75362%2010.4202%2010.2154%2010.6265%2010.7043%2010.6536C11.1932%2010.6806%2011.675%2010.5265%2012.0573%2010.2206L14%208.66663'%20stroke='%234A3830'%20stroke-width='1.33333'%20stroke-linecap='round'/%3e%3cpath%20d='M8.0013%203.99996C7.64768%203.99996%207.30854%203.85948%207.05849%203.60943C6.80844%203.35939%206.66797%203.02025%206.66797%202.66663C6.66797%202.08263%207.1193%201.61596%207.51664%201.18863L8.0013%200.666626L8.48597%201.18863C8.8833%201.61596%209.33464%202.08263%209.33464%202.66663C9.33464%203.02025%209.19416%203.35939%208.94411%203.60943C8.69406%203.85948%208.35492%203.99996%208.0013%203.99996Z'%20stroke='%234A3830'%20stroke-width='1.33333'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="date">
+                              <p class="text-primary">Jenny.Linnn@gmail.com</p>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <img src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.66667%203.33337H13.3333C13.7%203.33337%2014%203.63337%2014%204.00004V12C14%2012.3667%2013.7%2012.6667%2013.3333%2012.6667H2.66667C2.3%2012.6667%202%2012.3667%202%2012V4.00004C2%203.63337%202.3%203.33337%202.66667%203.33337Z'%20stroke='currentColor'%20stroke-width='1.33333'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M2%204.33337L8%208.00004L14%204.33337'%20stroke='currentColor'%20stroke-width='1.33333'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="mail">
+                              <p class="text-primary">2001.01.30</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex gap-2 btnGroup">
+                        <button type="button" class="btn btn-outline-primary fw-bold px-8">
+                          <svg class="bi" width="24" height="24" fill="currentColor">
+                            <use xlink:href="#editorSvg"/>
+                          </svg>
+                          編輯資訊
+                        </button>
+                        <button type="button" class="btn btn-outline-primary fw-bold px-8">
+                          <svg class="bi" width="24" height="24" fill="currentColor">
+                            <use xlink:href="#removeSvg"/>
+                          </svg>
+                          刪除
+                        </button>
+                      </div>
+                    </li>
+                    <li class="infoList d-flex justify-content-between flex-column flex-md-row align-items-md-center align-items-start p-md-6 p-4 gap-4">
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="imgBox">
+                          <img src="/web-layout-training-vite/assets/profile_02-DnAYNYlX.jpg" alt="">
+                        </div>
+                        <div class="infoListDetail d-flex flex-column justify-content-center gap-1">
+                          <p class="fs-5 fw-bold" style="color: #112211;">Jessica Yen</p>
+                          <div class="d-none d-md-block">
+                            <div class="d-flex gap-2">
+                              <img src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%208.66667C2%207.95942%202.28095%207.28115%202.78105%206.78105C3.28115%206.28095%203.95942%206%204.66667%206H11.3333C12.0406%206%2012.7189%206.28095%2013.219%206.78105C13.719%207.28115%2014%207.95942%2014%208.66667V13.3333C14%2013.687%2013.8595%2014.0261%2013.6095%2014.2761C13.3594%2014.5262%2013.0203%2014.6667%2012.6667%2014.6667H3.33333C2.97971%2014.6667%202.64057%2014.5262%202.39052%2014.2761C2.14048%2014.0261%202%2013.687%202%2013.3333V8.66667Z'%20stroke='%234A3830'%20stroke-width='1.33333'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M2%208.66663L3.94267%2010.2206C4.734%2010.854%205.876%2010.7906%206.59267%2010.074C6.77746%209.88911%206.99686%209.74248%207.23834%209.64244C7.47981%209.5424%207.73862%209.49091%208%209.49091C8.26138%209.49091%208.52019%209.5424%208.76166%209.64244C9.00314%209.74248%209.22254%209.88911%209.40733%2010.074C9.75362%2010.4202%2010.2154%2010.6265%2010.7043%2010.6536C11.1932%2010.6806%2011.675%2010.5265%2012.0573%2010.2206L14%208.66663'%20stroke='%234A3830'%20stroke-width='1.33333'%20stroke-linecap='round'/%3e%3cpath%20d='M8.0013%203.99996C7.64768%203.99996%207.30854%203.85948%207.05849%203.60943C6.80844%203.35939%206.66797%203.02025%206.66797%202.66663C6.66797%202.08263%207.1193%201.61596%207.51664%201.18863L8.0013%200.666626L8.48597%201.18863C8.8833%201.61596%209.33464%202.08263%209.33464%202.66663C9.33464%203.02025%209.19416%203.35939%208.94411%203.60943C8.69406%203.85948%208.35492%203.99996%208.0013%203.99996Z'%20stroke='%234A3830'%20stroke-width='1.33333'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="date">
+                              <p class="text-primary">Jenny.Linnn@gmail.com</p>
+                            </div>
+                            <div class="d-flex gap-2">
+                              <img src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.66667%203.33337H13.3333C13.7%203.33337%2014%203.63337%2014%204.00004V12C14%2012.3667%2013.7%2012.6667%2013.3333%2012.6667H2.66667C2.3%2012.6667%202%2012.3667%202%2012V4.00004C2%203.63337%202.3%203.33337%202.66667%203.33337Z'%20stroke='currentColor'%20stroke-width='1.33333'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M2%204.33337L8%208.00004L14%204.33337'%20stroke='currentColor'%20stroke-width='1.33333'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="mail">
+                              <p class="text-primary">2001.01.30</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex gap-2 btnGroup">
+                        <button type="button" class="btn btn-outline-primary fw-bold px-8">
+                          <svg class="bi" width="24" height="24" fill="currentColor">
+                            <use xlink:href="#editorSvg"/>
+                          </svg>
+                          編輯資訊
+                        </button>
+                        <button type="button" class="btn btn-outline-primary fw-bold px-8">
+                          <svg class="bi" width="24" height="24" fill="currentColor">
+                            <use xlink:href="#removeSvg"/>
+                          </svg>
+                          刪除
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-outline-primary fw-bold w-full w-md-auto">
+                      新增常用旅客
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-black">
+  <div class="container">
+    <div class="d-flex justify-content-between gap-10 flex-column flex-lg-row">
+        <div class="footer-info">
+            <a href="./">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAAuCAYAAADZavcnAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAprSURBVHgB7Z2LeVu3DoDh+3UAd4KwE9SdIMwE13eCqhPYncDKBHEmkDpBnAl07gRJJtDpBPEGKBFSiayKAPiUEvP/vpOH+BR5SIIASAEMBoPBYDAYDAaDwWAwGHz/XEAFEPHS/XUVCZ4vLi7mlukHg8F3iBv4NxjnZWH632EwGJwVP0EdLBP2CWSuCtNnE6SdS2hITYnJ1Zfaip4X7jF7QbN7Ht3zyZU3QUVcmQYK6C0xavr0FFKsoh0fXb0e4YTQIg7+/XrvnqlpfVxh24i08EGZ/kMk/WdojCvjDtuyhUJcHtY976g9lGV+DvGrSGsY798UqE4b9O1toCEu/5WiPhY64sq7VNRpAycm9NGTOoU+s1AToUHeFaZv3pB4xhOHS7vA8kG7xcIJBOtMHIdssNEEgroJ9g46gr4vNbyAEyLU7asg8B8oh9tmTFCW/iM8Q2hAoZ80V/B0O5KDcc8a/eA3cD5Y91CdllARGqCg23reQl+0k/cCTgTKUsXX8Vhj4nipKYjhVyZsgmdGePFpZrdQF0P5uvx7DxiJu8p10g7QS+y0XQkTtlVGX8Dp+FUIX+/+UWPisEyYRrFpC9P/MIQBRFJGK2Ut5fum9ipfAarTFRSSOECJ/0IfbEJcg531L3tYJowUt//f/aeGVSXW4R+VGtlY+sdOmm+q4wz5SBp8lVY6SBpvQM8jPM3bgB5a5beuff+Cch4g/h0N+LbRTAr03V9BGRbSIL3D6w6WjJvE+DShTdAfy4RN+/+JOoChN2lJyk3upaDO0GxVbEb6P11nn1z/EdqIthWGifaLwgHOhHwkSYPa5N497499/7Bq09bxFuSJhPJ6pWlH9ApeEwm2+ytRJL1xf5EycgE8P5cM4qAXspDGq9rm631Cn6isi3vQovkzdERRz4VqoQkKunNFdCrrgavHvVBPleYeZasFWQmSVi3UWYu05vItVugL9CZijuytA+a/r00td6gzDR/DQkdQtvqY/fg1dBzPktCx3GAmV/nXIOcjSQcz+FXxLSQQyv4N+K3SFfZVlkrtUaLb4fpiYsKoDVrplAjLhE1MWG+PaW4BmA6l5jFxZBBetJUQTdyvh1lckiT+l7stC+mketw1HjhfCfVppU+4ZsKWEB+k9N2bDNKwuJhI8Az8RHrdq18CnB7q4fCDMXHkIUkJS6Vi1yryKdLlhPRLJkqzgRPhMTMsijRAgw7mgcmCm3RK4Nr1IehWpkg49UsXqw/yh0wJVod1mNnQceS1i9pTFOOu9kn5KMohnwXOm3IjpN9ihb5A2e3aQAbI6xFWyrKrr+7It/lViHPHxOnigu7KuWbqcPQ95MyxNPuvmfDdYatjcCa6GulbibsapM5UmRTRDxJull9CJchS4cq7Z/K0NHA6mCUXTNjHAvO7ZcLW9Edog4mJS1tGUSelBXkP1nlPkiRLxTISr1e/sPoNqAnyGnJx9kZ+lbiCM8TVa4k86vMPwiyPWNk9HGVJ6Xcm7ZZJp5I4UNbaZ22XMGG1RP76hqqrO/Lj4+Yg7kYbtwVC+XWle4yL2SoRG094IjYHrLhFCfm9qZVXQplbpsw3uenQTwqxh8I3yJN94AwV25S9uNJ2xUIFUH5XzEH8bhNapL4x6o5F/M5PxOaAsq+FSczvXe82EMpcMem22I4Ub9nDekkTwdWRNJsWdTkog5OuPtT4HrVAf2VDjOg7kWtVeVYnYtGf7TBMlGXG/pzbzs3QBm6vbKAvE3iv0z8hH84aMkcsUpz34wLqwG277g8/CDqMiUnT0rrCHWyLWqJyJ45ncyIWv7lLx1A5eg2eMINXWv4NZXADdB35nFO8F5+YRfmgXcy0yZmLb6EdlgmLmmFzJw4bC5DOLUjp4fxOxFaxogyeYMAP7A1meq4qBuhRySKs7tziVurTwkkHEyOZcpJQyysAbORz9trA2lsV7TYjlv6sbjRvtEXZwW0bqvsUBAwTdgoTt4H8Y/6WCZNMuy09NrmJcB0LOMV2JehOYt91zaX96SAjA/KMyx4jR52G3GSkf9vzItcOW5SZCWulDGuhVyE9A7dgGPf8Ar4tTSTOnWtvOhF6D3o4M6WUz871/Vh77Dw2k68cCAPRMFEkaZzKtJEwUri+rjwGqnmLWjxfXkBHsLIV5Uj+N0L+VaUOlDX3N0zaLZMuxXP0jsnns7ZNMdHcGcljxaTPsmqV5omyh6+FijD1FU9Nj7MqR8C2W5Qd0oxeWzS9FsL1K0wmQUKLKQFpotQ6O3GS4KTsG06i+OKxCelYJmwNAgr9S7a/S4SYxDFBCjgkjuqOXkJZ2edHMsra5H4nrCRxhLy4d0zlcIRt/Up2pN5/0mPs0PtSTRJF72+ywn+3p9inQ+L4Nz2tKGsmjF5ECxVAf27CMlEm6Ae3opKozi4QyJ+ErYkkoR3S44Rx1ZPMTsJZu+cP95AOiu5uIcXug9Iy+g185hIHVjyLoizvSihvi4UrDHoJaiuUY4Q8uPTJZxmEurwU0q6wH6p3DmXdRE3OwrP68HQs7bFmJj5nUZlBpjR9M/AEjl7k2ejKpT1/bHUz4H0dXuVo0/HbvbGGibbuaQLHcvdpC/1YgO7ELPVfKxP6IV/0Lz0tjMXgD3wiFhtbUZhySSKQVqstpp+FoXw/CPmqLBlYV8exEur0gkm7wL5oD2xusC9Fki96CYmk6xX6Q4jJ25/Un0eIOn5V+CkEbu/bFOxjRTkK5evKp1WNO2BlwP+Y0hq8P8sci4h+Aqe9Kin3pMl82VnaWAJ/HoSkOs4NnbM0SRYJDhv5nCZfy92CjrIH685nJBUDzM3ykHl3CPoFmrY7lwefL8HfbTtr8lFPHOGFNJHgGXTpSz1Oq4PyFmUXL3eWf5QuGibHJ/Qr7S0TbTch3Lq41F4zPG03A/zlSIfcXyRegByB9DQXTPiu30kyscAzxQJCP3EKy9vc34lBb82JTbLSb5xYJoz6/jfIq5OFuKLeShMaA21dj31XA/4e3bpHKJC/MEU0XSGveK1ynDkHPKMfnXZx19iHFSSAfcyfhGHqsMhNq/h+3N0on4W03HYwqZ2P5M1tYZMXMtQZP6wmrxRzLHei9Yc6EXsq3AqyANldupQvJjg4P6Rtk3Tx7wz5vGfCogfMUL7+8QHKWDNhnHQawyjiqCxJKROHZcLGb8RWItxPQU9trTnld3vGk0Z0z46yHqFogAaRf2ai3CR+TpC+hpuQNGRNaAxzpTh6GLGp9NfATnpVIJ7RVuWgXqSYW2EdNlgmym+xDapfqMMO53pQPkdzmdguRduUvTK47UrSFh+9NWXL5FfNK3pX4FVJAyHvxi1eNdgSPNOJY69+uwkk1cGI4tPePdlB60gdtliXLfp2Vw147DNApf3/TWL84nYP5bD6F0ycNNGP5W0kr2ttPinm2HXkc404dlmYviW0TVpDO4q2HGHvTtuLP8LLaMNzzJluZ20h0f1TRSehByhzcJrBt8OXOycEk+sTwsCYmChZlpRDaLuCsll+H+6d1l5opeEv4NveQIJVMjgdkuXEwje9EaV/e0534QwGg8FgMBgMBoNBBv8A3bDGREFIT90AAAAASUVORK5CYII=" alt="logo">
+            </a>
+            <ul class="d-flex gap-8 mt-sm-8 mt-10 flex-sm-row flex-column">
+                <li>
+                    <a href="#">
+                        <p class="text-white">常見問題</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="text-white">關於我們</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="text-white">隱私權政策</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="text-white">使用者條款</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-link d-flex flex-column justify-content-center">
+            <ul class="d-flex gap-4 justify-content-lg-end justify-content-start">
+                <li>
+                    <a href="#">
+                        <img src="data:image/svg+xml,%3csvg%20width='40'%20height='41'%20viewBox='0%200%2040%2041'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_187_46574)'%3e%3cpath%20opacity='0.7'%20d='M20%201C30.7696%201%2039.5%209.73045%2039.5%2020.5C39.5%2031.2696%2030.7696%2040%2020%2040C9.23045%2040%200.5%2031.2696%200.5%2020.5C0.5%209.73045%209.23045%201%2020%201Z'%20stroke='white'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M29%2019.5263C29%2015.652%2024.9625%2012.5%2020%2012.5C15.0377%2012.5%2011%2015.652%2011%2019.5263C11%2022.9994%2014.2019%2025.9086%2018.527%2026.4589C18.8199%2026.5196%2019.2188%2026.6451%2019.3198%2026.886C19.4106%2027.1047%2019.3793%2027.4474%2019.3488%2027.6685C19.3488%2027.6685%2019.2436%2028.2796%2019.2204%2028.41C19.1814%2028.6288%2019.0395%2029.2659%2020%2028.8767C20.9608%2028.4874%2025.1828%2025.9404%2027.071%2023.8494C28.3754%2022.4736%2029%2021.077%2029%2019.5263ZM14.4146%2021.6339C14.1861%2021.6339%2014%2021.4408%2014%2021.203V17.9397C14%2017.7022%2014.2116%2017.5089%2014.48%2017.5089C14.7484%2017.5089%2014.9%2017.7006%2014.9%2017.9397V20.7724H15.9854C16.2143%2020.7724%2016.4%2020.9657%2016.4%2021.203C16.4%2021.4408%2016.2143%2021.6339%2015.9854%2021.6339H14.4146ZM18.2%2021.203C18.2%2021.4408%2017.9981%2021.6339%2017.7501%2021.6339C17.5019%2021.6339%2017.3%2021.4408%2017.3%2021.203V17.9397C17.3%2017.7022%2017.5019%2017.5089%2017.7501%2017.5089C17.9981%2017.5089%2018.2%2017.7022%2018.2%2017.9397V21.203ZM22.7%2021.203C22.7%2021.389%2022.5717%2021.5532%2022.3797%2021.6116C22.3316%2021.6265%2022.2813%2021.6339%2022.2309%2021.6339C22.0849%2021.6339%2021.9449%2021.5696%2021.8566%2021.4616L20.0372%2019.1842V21.203C20.0372%2021.4408%2019.8272%2021.6339%2019.5687%2021.6339C19.3103%2021.6339%2019.1%2021.4408%2019.1%2021.203V17.9397C19.1%2017.7541%2019.2288%2017.5899%2019.4203%2017.5312C19.4686%2017.5162%2019.5187%2017.5089%2019.5691%2017.5089C19.7153%2017.5089%2019.8554%2017.5731%2019.9431%2017.6812L21.7631%2019.9587V17.9397C21.7631%2017.7022%2021.9735%2017.5089%2022.2316%2017.5089C22.4902%2017.5089%2022.7%2017.7022%2022.7%2017.9397V21.203ZM25.5853%2019.1407C25.8142%2019.1407%2026%2019.3339%2026%2019.5715C26%2019.8088%2025.8142%2020.002%2025.5853%2020.002H24.4294V20.7724H25.5853C25.8138%2020.7724%2026%2020.9657%2026%2021.203C26%2021.4408%2025.8138%2021.6339%2025.5853%2021.6339H24.0145C23.7863%2021.6339%2023.6%2021.4408%2023.6%2021.203V19.5726V19.5715V17.9397C23.6%2017.7022%2023.7859%2017.5089%2024.0145%2017.5089H25.5853C25.8142%2017.5089%2026%2017.7022%2026%2017.9397C26%2018.1772%2025.8142%2018.3702%2025.5853%2018.3702H24.4294V19.1407H25.5853Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_187_46574'%3e%3crect%20width='40'%20height='40'%20fill='white'%20transform='translate(0%200.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="line">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="data:image/svg+xml,%3csvg%20width='40'%20height='41'%20viewBox='0%200%2040%2041'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_187_46577)'%3e%3cpath%20opacity='0.7'%20d='M20%201C30.7696%201%2039.5%209.73045%2039.5%2020.5C39.5%2031.2696%2030.7696%2040%2020%2040C9.23045%2040%200.5%2031.2696%200.5%2020.5C0.5%209.73045%209.23045%201%2020%201Z'%20stroke='white'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M20%2012.4946C20.855%2012.4946%2021.732%2012.5166%2022.582%2012.5526L23.586%2012.6006L24.547%2012.6576L25.447%2012.7186L26.269%2012.7826C27.161%2012.8509%2028.0004%2013.2316%2028.6395%2013.8577C29.2786%2014.4838%2029.6764%2015.3152%2029.763%2016.2056L29.803%2016.6306L29.878%2017.5406C29.948%2018.4836%2030%2019.5116%2030%2020.4946C30%2021.4776%2029.948%2022.5056%2029.878%2023.4486L29.803%2024.3586C29.79%2024.5046%2029.777%2024.6456%2029.763%2024.7836C29.6764%2025.6742%2029.2784%2026.5058%2028.6391%2027.1319C27.9999%2027.758%2027.1602%2028.1386%2026.268%2028.2066L25.448%2028.2696L24.548%2028.3316L23.586%2028.3886L22.582%2028.4366C21.732%2028.4726%2020.855%2028.4946%2020%2028.4946C19.145%2028.4946%2018.268%2028.4726%2017.418%2028.4366L16.414%2028.3886L15.453%2028.3316L14.553%2028.2696L13.731%2028.2066C12.839%2028.1384%2011.9996%2027.7577%2011.3605%2027.1316C10.7214%2026.5055%2010.3236%2025.6741%2010.237%2024.7836L10.197%2024.3586L10.122%2023.4486C10.0455%2022.4658%2010.0048%2021.4804%2010%2020.4946C10%2019.5116%2010.052%2018.4836%2010.122%2017.5406L10.197%2016.6306C10.21%2016.4846%2010.223%2016.3436%2010.237%2016.2056C10.3235%2015.3153%2010.7212%2014.484%2011.3601%2013.858C11.999%2013.2319%2012.8381%2012.8511%2013.73%2012.7826L14.551%2012.7186L15.451%2012.6576L16.413%2012.6006L17.417%2012.5526C18.268%2012.5166%2019.145%2012.4946%2020%2012.4946ZM18%2018.0696V22.9196C18%2023.3816%2018.5%2023.6696%2018.9%2023.4396L23.1%2021.0146C23.1914%2020.962%2023.2673%2020.8863%2023.3201%2020.795C23.3729%2020.7037%2023.4007%2020.6001%2023.4007%2020.4946C23.4007%2020.3892%2023.3729%2020.2856%2023.3201%2020.1943C23.2673%2020.103%2023.1914%2020.0272%2023.1%2019.9746L18.9%2017.5506C18.8088%2017.498%2018.7053%2017.4702%2018.5999%2017.4702C18.4945%2017.4703%2018.3911%2017.498%2018.2998%2017.5507C18.2086%2017.6034%2018.1329%2017.6792%2018.0802%2017.7705C18.0276%2017.8618%2017.9999%2017.9653%2018%2018.0706V18.0696Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_187_46577'%3e%3crect%20width='40'%20height='40'%20fill='white'%20transform='translate(0%200.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="youtube">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="data:image/svg+xml,%3csvg%20width='40'%20height='41'%20viewBox='0%200%2040%2041'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_187_46580)'%3e%3cpath%20opacity='0.7'%20d='M20%201C30.7696%201%2039.5%209.73045%2039.5%2020.5C39.5%2031.2696%2030.7696%2040%2020%2040C9.23045%2040%200.5%2031.2696%200.5%2020.5C0.5%209.73045%209.23045%201%2020%201Z'%20stroke='white'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M21.5983%2021.4736H24.1413L24.5219%2018.5404H21.5983V16.6677C21.5983%2015.8184%2021.8357%2015.2397%2023.0615%2015.2397L24.625%2015.239V12.6156C24.3545%2012.5799%2023.4265%2012.5%2022.3467%2012.5C20.0926%2012.5%2018.5494%2013.8669%2018.5494%2016.3773V18.5404H16V21.4736H18.5494V29H21.5983V21.4736Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_187_46580'%3e%3crect%20width='40'%20height='40'%20fill='white'%20transform='translate(0%200.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="fb">
+                    </a>
+                </li>
+            </ul>
+            <p class="mt-4">
+                copyright © 2025 ZOBAA 旅遊網站 All Rights Reserved.
+            </p>
+        </div>
+    </div>
+  </div>
+</footer>
+    <div class="d-none">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="editorSvg">
+      <g clip-path="url(#clip0_187_44193)">
+      <path d="M3 17.2501V21.0001H6.75L17.81 9.94006L14.06 6.19006L3 17.2501ZM20.71 7.04006C21.1 6.65006 21.1 6.02006 20.71 5.63006L18.37 3.29006C17.98 2.90006 17.35 2.90006 16.96 3.29006L15.13 5.12006L18.88 8.87006L20.71 7.04006Z" fill="currentColor"/>
+      </g>
+      <defs>
+      <clipPath id="clip0_187_44193">
+      <rect width="24" height="24" fill="currentColor"/>
+      </clipPath>
+      </defs>
+      </svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="removeSvg">
+      <g clip-path="url(#clip0_12649_2619)">
+      <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="currentColor"/>
+      </g>
+      <defs>
+      <clipPath id="clip0_12649_2619">
+      <rect width="24" height="24" fill="currentColor"/>
+      </clipPath>
+      </defs>
+      </svg>
+    </div>
+
+  </body>
+</html>
